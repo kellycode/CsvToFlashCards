@@ -1,11 +1,9 @@
 
 
-var cards = []
-var headers = []
-var currentCard = 0
-
-previousCardBuffer = 4
-var lastCards = new Array(previousCardBuffer).fill(0);
+var cards = [];
+var headers = [];
+var currentCard = 0;
+var selectedCard = 0;
 
 window.displayDescription = false
 
@@ -43,7 +41,6 @@ function processData(allText) {
         for (let index = 0; index < data.length; index++) {
             data[index] = data[index].replace(/\\n/g, "<br/>").replace(/['"]+/g, '');
         }
-        
         cards.push(data)
     }
 }
@@ -69,26 +66,17 @@ function displayCard(index) {
     $("#title").html(cards[index][getType("Title")])
     $("#question").html(cards[index][getType("Question")]+ '?')
     $("#answer").html(cards[index][getType("Answer")])
-    // document.getElementById("answer").style.maxHeight(0)
-    
-    // $(answer).css('max-height',  '0px')
-    // $("#example").text(cards[index][getType("Example")])
-    // $("#tags").text(cards[index][getType("Tags")])
 }
 
 function getNextCard() {
-    // loop until new selected card is unique
-    do {
-        var selectedCard = Math.floor(Math.random() * cards.length);
-    } while (lastCards.includes(selectedCard));
-    
-    // adds selectedCard to lastCards array and removes oldest one
-    lastCards.push(selectedCard)
-    lastCards.shift()
-
-    
-    console.log(lastCards.map(i => cards[i]).map(c => c[getType("Title")]));
-    
+    if(selectedCard === cards.length-1)
+    {
+        selectedCard = 0;
+    }
+    else
+    {
+        selectedCard += 1;
+    }
 
     return selectedCard
 }
@@ -102,23 +90,6 @@ function getType(type) {
     return null
 }
 
-function shuffle(array) {
-    var m = array.length, t, i;
-  
-    // While there remain elements to shuffle…
-    while (m) {
-  
-      // Pick a remaining element…
-      i = Math.floor(Math.random() * m--);
-  
-      // And swap it with the current element.
-      t = array[m];
-      array[m] = array[i];
-      array[i] = t;
-    }
-  
-    return array;
-  }
 
   window.onload = function() {
     this.newCard()
