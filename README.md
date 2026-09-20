@@ -9,7 +9,7 @@ Simple static website to train on any topic with flash cards
 * Run website, trough Github pages or something
 
 # Example
-[click here](https://jesper-hustad.github.io/CsvToFlashCards/.)
+[click here](https://kellycode.github.io/CsvToFlashCards/.)
 
 # Features  
 * Very simple program
