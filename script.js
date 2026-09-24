@@ -3,7 +3,7 @@
 var cards = [];
 var headers = [];
 var currentCard = 0;
-var selectedCard = 0;
+var selectedCard = -1;
 
 window.displayDescription = false
 
@@ -11,8 +11,8 @@ window.displayDescription = false
 $(document).ready(function() {
     $.ajax({
         type: "GET",
-        url: "data.csv",
-        dataType: "text",
+        url: "json_data.json",
+        dataType: "json",
         success: function(data) {processData(data);}
      });
 });
@@ -29,21 +29,12 @@ $(document).on("keypress click", function (e) {
     console.log("you clicked once")
 });
 
-
-function processData(allText) {
-
-    var allTextLines = allText.split(/\r\n|\n/)
-    headers = allTextLines[0].split(',')
-
-    for (var i=1; i<allTextLines.length; i++) {
-        var data = allTextLines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/)
-        data = data || []
-        for (let index = 0; index < data.length; index++) {
-            data[index] = data[index].replace(/\\n/g, "<br/>").replace(/['"]+/g, '');
-        }
-        cards.push(data)
-    }
+function processData(jsonData) {
+    headers = Object.keys(jsonData[0])
+    for (const row of jsonData)
+        cards.push(headers.map(h => String(row[h] ?? '').replace(/\r?\n/g, '<br/>')))
 }
+
 
 function showDescription(){
     $(answer).css('max-height',  '300px')
@@ -60,7 +51,6 @@ function newCard(){
     });
     
 }
-
 
 function displayCard(index) {
     $("#title").html(cards[index][getType("Title")])
