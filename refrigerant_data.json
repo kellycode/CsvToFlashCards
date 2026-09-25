@@ -46,6 +46,11 @@
     },
     {
         "Title": "Refrigerant Data",
+        "Question": "R-1234ze",
+        "Answer": "HFO - A2L - Medium Pressure - Used in chillers and heat pumps, R-134a drop-in replacement"
+    },
+    {
+        "Title": "Refrigerant Data",
         "Question": "R-290",
         "Answer": "HC (Propane) - A3 - High Pressure - Small appliances; highly flammable, strict charge limits"
     },
