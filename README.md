@@ -1,5 +1,5 @@
 # JSONToFlashCards
-Simple static website to train on any topic with flash cards  
+Using it for EPA 608 Study
 
 # Setup  
 
