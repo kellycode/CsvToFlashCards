@@ -47,7 +47,7 @@
     {
         "Title": "Refrigerant Data",
         "Question": "R-1234ze",
-        "Answer": "HFO - A2L - Medium Pressure - Used in chillers and heat pumps, R-134a drop-in replacement"
+        "Answer": "HFO - A2L - Medium Pressure - Used in chillers (commercial refrigeration) and heat pumps, R-134a drop-in replacement"
     },
     {
         "Title": "Refrigerant Data",
@@ -103,5 +103,10 @@
         "Title": "Refrigerant Data",
         "Question": "R-718",
         "Answer": "Water - A1 - Very Low Pressure - Natural refrigerant used in absorption chillers. Non-toxic, non-flammable"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-1270",
+        "Answer": "Propylene (C₃H₆) - A1 - Medium Pressure - Heat pumps, some commercial systems"
     }
 ]
