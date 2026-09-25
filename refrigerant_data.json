@@ -1,0 +1,102 @@
+[
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-11",
+        "Answer": "CFC - A1 - Low Pressure - Large centrifugal chillers (Ozone depleting)"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-12",
+        "Answer": "CFC - A1 - Medium Pressure - Older auto AC (Section 609), older refrigeration"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-22",
+        "Answer": "HCFC - A1 - High Pressure - Legacy residential AC (Phase-out complete)"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-123",
+        "Answer": "HCFC - B1 - Low Pressure - High toxicity chiller replacement for R-11"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-134a",
+        "Answer": "HFC - A1 - Medium Pressure - Standard retrofits, auto AC, small appliances"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-404A",
+        "Answer": "HFC - A1 - High Pressure - Commercial refrigeration systems"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-410A",
+        "Answer": "HFC - A1 - High Pressure - Standard modern residential AC (High pressure)"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-32",
+        "Answer": "HFC - A2L - High Pressure - Next-gen AC; mildly flammable substitute"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-1234yf",
+        "Answer": "HFO - A2L - Medium Pressure - Modern automotive AC systems"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-290",
+        "Answer": "HC (Propane) - A3 - High Pressure - Small appliances; highly flammable, strict charge limits"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-744",
+        "Answer": "CO₂ - A1 - Very High Pressure - High operating pressure, low global warming potential"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-717",
+        "Answer": "Ammonia - B2L - High Pressure - Industrial refrigeration; highly toxic"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-125",
+        "Answer": "HFC - A1 - High Pressure - Fire suppressant; also used as a heavy component in blends like R-410A and R-404A"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-407C",
+        "Answer": "HFC Blend - A1 - High Pressure - R-22 retrofit blend. High temperature glide (Zeotrope); must be liquid-charged"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-454B",
+        "Answer": "HFO/HFC Blend - A2L - High Pressure - Next-generation residential AC alternative to R-410A. Mildly flammable"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-500",
+        "Answer": "CFC Blend - A1 - Medium Pressure - Older commercial systems. Azeotropic blend (R-12 and R-152a)"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-502",
+        "Answer": "CFC Blend - A1 - High Pressure - Legacy commercial low-temp refrigeration. Azeotropic blend (R-22 and R-115)"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-600",
+        "Answer": "HC (Butane) - A3 - Medium Pressure - Hydrocarbon refrigerant; highly flammable, strictly regulated charge limits"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-600a",
+        "Answer": "HC (Isobutane) - A3 - Medium / High Pressure - Standard in modern domestic refrigerators/freezers. Highly flammable"
+    },
+    {
+        "Title": "Refrigerant Data",
+        "Question": "R-718",
+        "Answer": "Water - A1 - Very Low Pressure - Natural refrigerant used in absorption chillers. Non-toxic, non-flammable"
+    }
+]

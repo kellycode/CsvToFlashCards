@@ -11,7 +11,7 @@ window.displayDescription = false
 $(document).ready(function() {
     $.ajax({
         type: "GET",
-        url: "json_data.json",
+        url: "refrigerant_data.json",
         dataType: "json",
         success: function(data) {processData(data);}
      });
