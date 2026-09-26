@@ -17,7 +17,29 @@ $(document).ready(function() {
      });
 });
 
-$(document).on("keypress click", function (e) {
+$(document).on("keydown click", function (e) {
+    if (e.key === 'ArrowLeft') {
+        console.log("Left arrow pressed");
+        if(selectedCard > 0) {
+            selectedCard -= 1;
+        }
+        displayCard(selectedCard);
+        showDescription();
+        e.preventDefault();
+        return;
+    }
+
+    if (e.key === 'ArrowRight') {
+        console.log("Right arrow pressed");
+        if(selectedCard < cards.length - 1) {
+            selectedCard += 1;
+        }
+        displayCard(selectedCard);
+        showDescription();
+        e.preventDefault();
+        return;
+    }
+
     if(window.displayDescription){
         newCard()
     }else{
